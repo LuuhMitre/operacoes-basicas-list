@@ -35,6 +35,7 @@ public class EstoqueProdutos {
             for(Produto p: estoqueProdutosMap.values()) {
                 if(p.getPreco() > maiorPreco) {
                     produtoMaisCaro = p;
+                    maiorPreco = p.getPreco();
                 }
             }
         }
